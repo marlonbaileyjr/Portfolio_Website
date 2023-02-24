@@ -1,8 +1,10 @@
 import React, { Component }  from 'react';
 import { Container, Row, Col, Nav, Tab } from 'react-bootstrap';
 import movieLandimg from "../assets/img/project-img1.png";
+import PortfolioPage from "../assets/img/project-img2.png";
 import {ProjectCard} from "./ProjectCard";
 import comingsoon from "../assets/img/comingsoon.png";
+import ChatAppDesktop from "../assets/img/project-img3.png";
 
 
 
@@ -13,7 +15,25 @@ export const Projects = () => {
             title: "Movie Land",
             description: "API, Design, Development",
             imgUrl: movieLandimg,
-          },
+        },
+        {
+            title: "ChatApp Mobile",
+            description: "React Native, MongoDB, Express, Node.js, Socket.io, Expo",
+            imgUrl: comingsoon,
+            gitUrl: "https://github.com/marlonbaileyjr23/ChatApp-ReactNative"
+        },
+        {
+            title: "ChatApp Desktop",
+            description: "Electron, MongoDB, Express, Node.js, Socket.io",
+            imgUrl: ChatAppDesktop,
+            gitUrl: "https://github.com/marlonbaileyjr23/Chat-App"
+        },
+        {
+            title: "Portfolio Website",
+            description: "React, MongoDB, Express, Node.js, Socket.io",
+            imgUrl: PortfolioPage,
+            gitUrl: "https://github.com/marlonbaileyjr23/Portfolio_Website"
+        },
         ];
 
     return(
@@ -28,9 +48,6 @@ export const Projects = () => {
                             <Nav.Item>
                                 <Nav.Link eventKey="first">Personal Projects</Nav.Link>
                             </Nav.Item>
-                                <Nav.Item>
-                            <Nav.Link eventKey="second">Landing Pages</Nav.Link>
-                                </Nav.Item>
                         </Nav>
                         <Tab.Content>
                             <Tab.Pane eventKey="first">
@@ -44,11 +61,6 @@ export const Projects = () => {
                                             )
                                         })
                                     }
-                                </Row>
-                            </Tab.Pane>
-                            <Tab.Pane eventKey="second">        
-                                <Row>
-                                    <h1>Coming Soon</h1>
                                 </Row>
                             </Tab.Pane>
                         </Tab.Content>

@@ -57,7 +57,10 @@ export const Banner = () => {
               <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                 <span className="tagline">Welcome to my Portfolio</span>
                 <h1>{`Hi! I'm a `} <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Web Developer", "Web Designer", "UI/UX Designer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>My name is Marlon Bailey Jr. I am a self taught web developer who is constantly adding new skils to my repertoire. You can contact me for further information using the form below. A full view of my projects are also listed.</p>
+                  <p>Highly motivated computer science student at Fairleigh Dickinson University, with a strong foundation in programming
+and a passion for solving complex problems. Experienced in web development and machine learning. Key strengths
+include strong analytical abilities, experience in Node.js and JavaScript, including building of several back-end systems to
+power web and mobile apps.</p>
               </div>}
             </TrackVisibility>
                         </Col>

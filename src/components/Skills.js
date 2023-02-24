@@ -7,6 +7,10 @@ import M from "../assets/img/meter5.png";
 import Python from "../assets/img/meter6.png";
 import ReactJS from "../assets/img/meter7.png";
 import API from "../assets/img/meter8.png";
+import Aws from "../assets/img/meter9.png";
+import MongoDb from "../assets/img/meter10.png";
+import NodeJs from "../assets/img/meter11.png";
+import ReactNative from "../assets/img/meter12.png";
 
 
 import Carousel from 'react-multi-carousel';
@@ -72,8 +76,24 @@ export const Skills = () => {
                                 <h5>ReactJS</h5>
                             </div>
                             <div className="item">
+                                <img src={ReactNative} alt="Image" />
+                                <h5>React Native</h5>
+                            </div>
+                            <div className="item">
                                 <img src={API} alt="Image" />
                                 <h5>API</h5>
+                            </div>
+                            <div className="item">
+                                <img src={Aws} alt="Image" />
+                                <h5>AWS EC2</h5>
+                            </div>
+                            <div className="item">
+                                <img src={NodeJs} alt="Image" />
+                                <h5>NodeJs</h5>
+                            </div>
+                            <div className="item">
+                                <img src={MongoDb} alt="Image" />
+                                <h5>Mongo DB</h5>
                             </div>
                         </Carousel>
                     </div>

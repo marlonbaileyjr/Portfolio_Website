@@ -5,8 +5,8 @@ import logo from '../assets/img/MB-logo.png';
 import LinkedIn from '../assets/img/nav-icon1.png';
 import Github from '../assets/img/nav-icon2.png';
 import Email from '../assets/img/email.png';
-import Resume from '../assets/font/Resume_pdf.pdf';
-import { saveAs } from "file-saver";
+import Resume from '../assets/font/resume.pdf';
+import DownloadButton from './DownloadFile';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
@@ -72,8 +72,7 @@ export const NavBar = () => {
                 <a href="https://github.com/Sweatlys" target="_blank" rel="noreferrer"><img src={Github} alt="" /></a>
                 <a href="mailto:marlonbbusiness@gmail.com?subject=Portfolio Website Request"><img src={Email} alt="" /></a>
               </div>
-                <button className='vvd' onClick={onButtonClick} target="_BLANK"><span>Download My Resume</span></button>
-                
+              <DownloadButton url={Resume} filename='Marlon_BaileyJr_Resume.pdf'/>
             </span>
           </Navbar.Collapse>
         </Container>
