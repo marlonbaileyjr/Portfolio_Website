@@ -4,27 +4,11 @@ import { Navbar, Nav, Container } from "react-bootstrap";
 import logo from '../assets/img/MB-logo.png';
 import LinkedIn from '../assets/img/nav-icon1.png';
 import Github from '../assets/img/nav-icon2.png';
-import Email from '../assets/img/email.png';
 import Resume from '../assets/font/resume.pdf';
 import DownloadButton from './DownloadFile';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-
-const onButtonClick = () => {
-  // using Java Script method to get PDF file
-  fetch({Resume}).then(response => {
-      response.blob().then(blob => {
-          // Creating new object of PDF file
-          const fileURL = window.URL.createObjectURL(blob);
-          // Setting various property values
-          let alink = document.createElement('a');
-          alink.href = Resume;
-          alink.download = 'Marlon_BaileyJr_Resume.pdf';
-          alink.click();
-      })
-  })
-}
 
 export const NavBar = () => {
 
@@ -70,7 +54,6 @@ export const NavBar = () => {
               <div className="social-icon">
                 <a href="http://linkedin.com/in/marlon-bailey-jr" target="_blank" rel="noreferrer"><img src={LinkedIn} alt="" /></a>
                 <a href="https://github.com/Sweatlys" target="_blank" rel="noreferrer"><img src={Github} alt="" /></a>
-                <a href="mailto:marlonbbusiness@gmail.com?subject=Portfolio Website Request"><img src={Email} alt="" /></a>
               </div>
               <DownloadButton url={Resume} filename='Marlon_BaileyJr_Resume.pdf'/>
             </span>
